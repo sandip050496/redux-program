@@ -1,13 +1,8 @@
 import React from 'react'
 
 export default function Home(props) {
-    console.warn("home", props.cartDataItem)
     return (
         <div>
-            <div className="add-to-cart">
-                <span className="cart-count">{props.cartDataItem.length}</span>
-                <img src="https://static.vecteezy.com/system/resources/thumbnails/000/496/007/small/Ecommerce_998.jpg" />
-            </div>
             <h1>Home Component</h1>
             <div className="cart-wrapper">
                 <div className="img-wrapper item">
