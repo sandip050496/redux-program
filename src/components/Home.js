@@ -19,6 +19,8 @@ export default function Home(props) {
                 <div className="btn-wrapper item">
                     <button onClick={() => props.addToCarthandler({price: 1000, name: "I-Phone"})}>
                         Add To Cart</button>
+                    <button onClick={() => props.removeToCartHandler()}>
+                        Remove To Cart</button>
                 </div>
             </div>
         </div>

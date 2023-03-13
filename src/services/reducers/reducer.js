@@ -11,10 +11,10 @@ export default function cartItem(state = [], action) {
             ]
         break;
         case REMOVE_TO_CART:
-            return {
-                ...state,
-                cartData: action.data
-            }
+            state.pop();
+            return [
+                ...state
+            ]
         break;
         default :
             return state;
