@@ -11,7 +11,10 @@ export default function cartItem(state = [], action) {
             ]
         break;
         case REMOVE_TO_CART:
-            state.pop();
+            const index = state && state.findIndex((data) => data.cartData.id === action.id);
+            if(index > -1) {
+                state.splice(index, 1);
+            }
             return [
                 ...state
             ]

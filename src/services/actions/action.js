@@ -8,8 +8,9 @@ export const addToCart = (data) => {
     }
 }
 
-export const removeToCart = () => {
+export const removeToCart = (id) => {
     return {
-        type: REMOVE_TO_CART
+        type: REMOVE_TO_CART,
+        id: id
     }
 } 
